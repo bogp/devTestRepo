@@ -1,14 +1,23 @@
 {
-	"categories": {
-		"portico": [
-			"PorticoAutoSubTests",
-			"PorticoAchTests"
-		],
-		"certifications": [
-			"EcomCertification"
-		],
-		"gpApi": [
-			"AccessTokenTests"
-		]
-	}
+   "categories":[
+      {
+         "name":"portico",
+         "classes":[
+            "PorticoAutoSubTests",
+            "PorticoAchTests"
+         ]
+      },
+      {
+         "name":"certifications",
+         "classes":[
+            "EcomCertification"
+         ]
+      },
+      {
+         "name":"gpApi",
+         "classes":[
+            "AccessTokenTests"
+         ]
+      }
+   ]
 }
