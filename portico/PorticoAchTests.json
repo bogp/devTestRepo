@@ -1,5 +1,37 @@
 {
-   "tests": [
-
+   "tests":[
+      {
+         "name":"checkNewCryptoURL",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTyMAQBiHVEAewvIzXVFcmUd2UcyBge_eCpaASUp0A</SecretAPIKey><PosReqDT>2020-06-11T14:56:18.963+03:00</PosReqDT></Header><Transaction><CheckSale><Block1><Amt>10</Amt><ConsumerInfo><Address1>123 Main St.</Address1><City>Downtown</City><State>NJ</State><Zip>12345</Zip><FirstName>John</FirstName><LastName>Doe</LastName><PhoneNumber>8003214567</PhoneNumber><DLNumber>09876543210</DLNumber><DLState>TX</DLState><IdentityInfo><SSNL4>4321</SSNL4><DOBYear>1997</DOBYear></IdentityInfo></ConsumerInfo><CheckAction>SALE</CheckAction><AccountInfo><RoutingNumber>490000018</RoutingNumber><AccountNumber>24413815</AccountNumber><AccountType>CHECKING</AccountType></AccountInfo><DataEntryMode>MANUAL</DataEntryMode><CheckType>PERSONAL</CheckType><SECCode>PPD</SECCode><VerifyInfo><CheckVerify>N</CheckVerify><ACHVerify>N</ACHVerify></VerifyInfo></Block1></CheckSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      },
+	  {
+         "name":"checkSale",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTyMAQBiHVEAewvIzXVFcmUd2UcyBge_eCpaASUp0A</SecretAPIKey><PosReqDT>2020-06-11T14:56:20.077+03:00</PosReqDT></Header><Transaction><CheckSale><Block1><Amt>11</Amt><ConsumerInfo><Address1>123 Main St.</Address1><City>Downtown</City><State>NJ</State><Zip>12345</Zip><FirstName>John</FirstName><LastName>Doe</LastName><PhoneNumber>8003214567</PhoneNumber><DLNumber>09876543210</DLNumber><DLState>TX</DLState><IdentityInfo><SSNL4>4321</SSNL4><DOBYear>1997</DOBYear></IdentityInfo></ConsumerInfo><CheckAction>SALE</CheckAction><AccountInfo><RoutingNumber>490000018</RoutingNumber><AccountNumber>24413815</AccountNumber><AccountType>CHECKING</AccountType></AccountInfo><DataEntryMode>MANUAL</DataEntryMode><CheckType>PERSONAL</CheckType><SECCode>PPD</SECCode><VerifyInfo><CheckVerify>N</CheckVerify><ACHVerify>N</ACHVerify></VerifyInfo></Block1></CheckSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      },
+	  {
+         "name":"checkVoidFromTransactionId",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTyMAQBiHVEAewvIzXVFcmUd2UcyBge_eCpaASUp0A</SecretAPIKey><PosReqDT>2020-06-11T14:56:21.125+03:00</PosReqDT></Header><Transaction><CheckSale><Block1><Amt>10</Amt><ConsumerInfo><Address1>123 Main St.</Address1><City>Downtown</City><State>NJ</State><Zip>12345</Zip><FirstName>John</FirstName><LastName>Doe</LastName><PhoneNumber>8003214567</PhoneNumber><DLNumber>09876543210</DLNumber><DLState>TX</DLState><IdentityInfo><SSNL4>4321</SSNL4><DOBYear>1997</DOBYear></IdentityInfo></ConsumerInfo><CheckAction>SALE</CheckAction><AccountInfo><RoutingNumber>490000018</RoutingNumber><AccountNumber>24413815</AccountNumber><AccountType>CHECKING</AccountType></AccountInfo><DataEntryMode>MANUAL</DataEntryMode><CheckType>PERSONAL</CheckType><SECCode>PPD</SECCode><VerifyInfo><CheckVerify>N</CheckVerify><ACHVerify>N</ACHVerify></VerifyInfo></Block1></CheckSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      }
    ]
 }
