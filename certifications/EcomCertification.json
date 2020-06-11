@@ -7,8 +7,8 @@
             "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTyMAQBiHVEAewvIzXVFcmUd2UcyBge_eCpaASUp0A</SecretAPIKey><PosReqDT>2020-06-11T15:20:35.170+03:00</PosReqDT></Header><Transaction><BatchClose/></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
          },
          "response":{
-            "type":"gatewayMessageResponse",
-            "data":"Transaction was rejected because it requires a batch to be open."
+            "type":"gatewayExceptionResponse",
+            "data":"{ \"exceptionType\": \"GatewayException\", \"exceptionMessage\": \"Transaction was rejected because it requires a batch to be open.\"}"
          }
       },
       {
