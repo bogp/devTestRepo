@@ -1,34 +1,37 @@
 {
-   "tests":{
-      "clinicOrOther":{
+   "tests":[
+      {
+         "name":"clinicOrOther",
          "request":{
             "type":"soapRequest",
             "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTeSAQAfG1UA9qQDrzl-kz4toXvARyieptFwSKP24w</SecretAPIKey><PosReqDT>2020-05-29T14:09:43.865+03:00</PosReqDT></Header><Transaction><CreditSale><Block1><AllowDup>Y</AllowDup><AllowPartialAuth>N</AllowPartialAuth><Amt>215</Amt><CardData><ManualEntry><CardNbr>411111XXXXXX1111</CardNbr><ExpMonth>12</ExpMonth><ExpYear>2025</ExpYear><CVV2>123</CVV2><ReaderPresent>N</ReaderPresent><CardPresent>N</CardPresent></ManualEntry><TokenRequest>N</TokenRequest></CardData><AutoSubstantiation><FirstAdditionalAmtInfo><AmtType>TOTAL_HEALTHCARE_AMT</AmtType><Amt>15000</Amt></FirstAdditionalAmtInfo><SecondAdditionalAmtInfo><AmtType>SUBTOTAL_CLINIC_OR_OTHER_AMT</AmtType><Amt>15000</Amt></SecondAdditionalAmtInfo><MerchantVerificationValue>12345</MerchantVerificationValue><RealTimeSubstantiation>N</RealTimeSubstantiation></AutoSubstantiation></Block1></CreditSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
          },
          "response":{
             "type":"codeResponse",
-            "data": "00"
+            "data":"00"
          }
       },
-	  "dental":{
+      {
+         "name":"dental",
          "request":{
             "type":"soapRequest",
-            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<soap:Envelope\n  xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n  xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <soap:Body>\n    <PosRequest\n      xmlns=\"http://Hps.Exchange.PosGateway\">\n      <Ver1.0>\n        <Header>\n          <SecretAPIKey>skapi_cert_MTeSAQAfG1UA9qQDrzl-kz4toXvARyieptFwSKP24w</SecretAPIKey>\n          <PosReqDT>2020-05-28T10:38:59.649+03:00</PosReqDT>\n        </Header>\n        <Transaction>\n          <CreditSale>\n            <Block1>\n              <AllowDup>Y</AllowDup>\n              <AllowPartialAuth>N</AllowPartialAuth>\n              <Amt>215</Amt>\n              <CardData>\n                <ManualEntry>\n                  <CardNbr>411111XXXXXX1111</CardNbr>\n                  <ExpMonth>12</ExpMonth>\n                  <ExpYear>2025</ExpYear>\n                  <CVV2>123</CVV2>\n                  <ReaderPresent>N</ReaderPresent>\n                  <CardPresent>N</CardPresent>\n                </ManualEntry>\n                <TokenRequest>N</TokenRequest>\n              </CardData>\n              <AutoSubstantiation>\n                <FirstAdditionalAmtInfo>\n                  <AmtType>SUBTOTAL_DENTAL_AMT</AmtType>\n                  <Amt>15000</Amt>\n                </FirstAdditionalAmtInfo>\n                <SecondAdditionalAmtInfo>\n                  <AmtType>TOTAL_HEALTHCARE_AMT</AmtType>\n                  <Amt>15000</Amt>\n                </SecondAdditionalAmtInfo>\n                <MerchantVerificationValue>12345</MerchantVerificationValue>\n                <RealTimeSubstantiation>N</RealTimeSubstantiation>\n              </AutoSubstantiation>\n            </Block1>\n          </CreditSale>\n        </Transaction>\n      </Ver1.0>\n    </PosRequest>\n  </soap:Body>\n</soap:Envelope>"			
-			},
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<soap:Envelope\n  xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n  xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <soap:Body>\n    <PosRequest\n      xmlns=\"http://Hps.Exchange.PosGateway\">\n      <Ver1.0>\n        <Header>\n          <SecretAPIKey>skapi_cert_MTeSAQAfG1UA9qQDrzl-kz4toXvARyieptFwSKP24w</SecretAPIKey>\n          <PosReqDT>2020-05-28T10:38:59.649+03:00</PosReqDT>\n        </Header>\n        <Transaction>\n          <CreditSale>\n            <Block1>\n              <AllowDup>Y</AllowDup>\n              <AllowPartialAuth>N</AllowPartialAuth>\n              <Amt>215</Amt>\n              <CardData>\n                <ManualEntry>\n                  <CardNbr>411111XXXXXX1111</CardNbr>\n                  <ExpMonth>12</ExpMonth>\n                  <ExpYear>2025</ExpYear>\n                  <CVV2>123</CVV2>\n                  <ReaderPresent>N</ReaderPresent>\n                  <CardPresent>N</CardPresent>\n                </ManualEntry>\n                <TokenRequest>N</TokenRequest>\n              </CardData>\n              <AutoSubstantiation>\n                <FirstAdditionalAmtInfo>\n                  <AmtType>SUBTOTAL_DENTAL_AMT</AmtType>\n                  <Amt>15000</Amt>\n                </FirstAdditionalAmtInfo>\n                <SecondAdditionalAmtInfo>\n                  <AmtType>TOTAL_HEALTHCARE_AMT</AmtType>\n                  <Amt>15000</Amt>\n                </SecondAdditionalAmtInfo>\n                <MerchantVerificationValue>12345</MerchantVerificationValue>\n                <RealTimeSubstantiation>N</RealTimeSubstantiation>\n              </AutoSubstantiation>\n            </Block1>\n          </CreditSale>\n        </Transaction>\n      </Ver1.0>\n    </PosRequest>\n  </soap:Body>\n</soap:Envelope>"
+         },
          "response":{
             "type":"codeResponse",
-            "data": "00"
+            "data":"00"
          }
       },
-	  "totalAmountTest":{
+      {
+         "name":"totalAmountTest",
          "request":{
             "type":"noRequest",
-            "data": null
-		},
+            "data":null
+         },
          "response":{
             "type":"noResponse",
-            "data": "00"
+            "data":"00"
          }
       }
-   }
+   ]
 }
