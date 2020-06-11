@@ -1,5 +1,26 @@
 {
-   "tests": [
-
+   "tests":[
+      {
+         "name":"ecomm_000_CloseBatch",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTyMAQBiHVEAewvIzXVFcmUd2UcyBge_eCpaASUp0A</SecretAPIKey><PosReqDT>2020-06-11T15:20:35.170+03:00</PosReqDT></Header><Transaction><BatchClose/></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"gatewayMessageResponse",
+            "data":"Transaction was rejected because it requires a batch to be open."
+         }
+      },
+      {
+         "name":"ecomm_001_verify_visa",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTyMAQBiHVEAewvIzXVFcmUd2UcyBge_eCpaASUp0A</SecretAPIKey><PosReqDT>2020-06-11T15:20:37.043+03:00</PosReqDT></Header><Transaction><CreditAccountVerify><Block1><CardData><ManualEntry><CardNbr>401200XXXXXX0016</CardNbr><ExpMonth>12</ExpMonth><ExpYear>2025</ExpYear><CVV2>123</CVV2><ReaderPresent>N</ReaderPresent><CardPresent>N</CardPresent></ManualEntry><TokenRequest>N</TokenRequest></CardData></Block1></CreditAccountVerify></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      }
    ]
 }
