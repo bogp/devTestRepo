@@ -1,0 +1,14 @@
+{
+	"categories": {
+		"portico": [
+			"PorticoAutoSubTests",
+			"PorticoAchTests"
+		],
+		"certifications": [
+			"EcomCertification"
+		],
+		"gpApi": [
+			"AccessTokenTests"
+		]
+	}
+}
