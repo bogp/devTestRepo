@@ -23,6 +23,50 @@
          }
       },
       {
+         "name":"vision",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTeSAQAfG1UA9qQDrzl-kz4toXvARyieptFwSKP24w</SecretAPIKey><PosReqDT>2020-06-12T14:38:41.885+03:00</PosReqDT></Header><Transaction><CreditSale><Block1><AllowDup>Y</AllowDup><AllowPartialAuth>N</AllowPartialAuth><Amt>215</Amt><CardData><TrackData method=\"swipe\">&lt;E1050711%B401200XXXXXX0016^VI TEST CREDIT^251200000000000000000000?|LO04K0WFOmdkDz0um+GwUkILL8ZZOP6Zc4rCpZ9+kg2T3JBT4AEOilWTI|+++++++Dbbn04ekG|11;401200XXXXXX0016=25120000000000000000?|1u2F/aEhbdoPixyAPGyIDv3gBfF|+++++++Dbbn04ekG|00|||/wECAQECAoFGAgEH2wYcShV78RZwb3NAc2VjdXJlZXhjaGFuZ2UubmV0PX50qfj4dt0lu9oFBESQQNkpoxEVpCW3ZKmoIV3T93zphPS3XKP4+DiVlM8VIOOmAuRrpzxNi0TN/DWXWSjUC8m/PI2dACGdl/hVJ/imfqIs68wYDnp8j0ZfgvM26MlnDbTVRrSx68Nzj2QAgpBCHcaBb/FZm9T7pfMr2Mlh2YcAt6gGG1i2bJgiEJn8IiSDX5M2ybzqRT86PCbKle/XCTwFFe1X|&gt;;</TrackData><EncryptionData><Version>01</Version></EncryptionData><TokenRequest>N</TokenRequest></CardData><AutoSubstantiation><FirstAdditionalAmtInfo><AmtType>SUBTOTAL_VISION__OPTICAL_AMT</AmtType><Amt>15000</Amt></FirstAdditionalAmtInfo><SecondAdditionalAmtInfo><AmtType>TOTAL_HEALTHCARE_AMT</AmtType><Amt>15000</Amt></SecondAdditionalAmtInfo><MerchantVerificationValue>12345</MerchantVerificationValue><RealTimeSubstantiation>N</RealTimeSubstantiation></AutoSubstantiation></Block1></CreditSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      },
+      {
+         "name":"prescription",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTeSAQAfG1UA9qQDrzl-kz4toXvARyieptFwSKP24w</SecretAPIKey><PosReqDT>2020-06-12T14:38:44.509+03:00</PosReqDT></Header><Transaction><CreditSale><Block1><AllowDup>Y</AllowDup><AllowPartialAuth>N</AllowPartialAuth><Amt>215</Amt><CardData><TrackData method=\"swipe\">&lt;E1050711%B401200XXXXXX0016^VI TEST CREDIT^251200000000000000000000?|LO04K0WFOmdkDz0um+GwUkILL8ZZOP6Zc4rCpZ9+kg2T3JBT4AEOilWTI|+++++++Dbbn04ekG|11;401200XXXXXX0016=25120000000000000000?|1u2F/aEhbdoPixyAPGyIDv3gBfF|+++++++Dbbn04ekG|00|||/wECAQECAoFGAgEH2wYcShV78RZwb3NAc2VjdXJlZXhjaGFuZ2UubmV0PX50qfj4dt0lu9oFBESQQNkpoxEVpCW3ZKmoIV3T93zphPS3XKP4+DiVlM8VIOOmAuRrpzxNi0TN/DWXWSjUC8m/PI2dACGdl/hVJ/imfqIs68wYDnp8j0ZfgvM26MlnDbTVRrSx68Nzj2QAgpBCHcaBb/FZm9T7pfMr2Mlh2YcAt6gGG1i2bJgiEJn8IiSDX5M2ybzqRT86PCbKle/XCTwFFe1X|&gt;;</TrackData><EncryptionData><Version>01</Version></EncryptionData><TokenRequest>N</TokenRequest></CardData><AutoSubstantiation><FirstAdditionalAmtInfo><AmtType>TOTAL_HEALTHCARE_AMT</AmtType><Amt>15000</Amt></FirstAdditionalAmtInfo><SecondAdditionalAmtInfo><AmtType>SUBTOTAL_PRESCRIPTION_AMT</AmtType><Amt>15000</Amt></SecondAdditionalAmtInfo><MerchantVerificationValue>12345</MerchantVerificationValue><RealTimeSubstantiation>N</RealTimeSubstantiation></AutoSubstantiation></Block1></CreditSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      },
+      {
+         "name":"twoSubTotals",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTeSAQAfG1UA9qQDrzl-kz4toXvARyieptFwSKP24w</SecretAPIKey><PosReqDT>2020-06-12T14:38:43.141+03:00</PosReqDT></Header><Transaction><CreditSale><Block1><AllowDup>Y</AllowDup><AllowPartialAuth>N</AllowPartialAuth><Amt>215</Amt><CardData><ManualEntry><CardNbr>411111XXXXXX1111</CardNbr><ExpMonth>12</ExpMonth><ExpYear>2025</ExpYear><CVV2>123</CVV2><ReaderPresent>N</ReaderPresent><CardPresent>N</CardPresent></ManualEntry><TokenRequest>N</TokenRequest></CardData><AutoSubstantiation><FirstAdditionalAmtInfo><AmtType>SUBTOTAL_VISION__OPTICAL_AMT</AmtType><Amt>2500</Amt></FirstAdditionalAmtInfo><SecondAdditionalAmtInfo><AmtType>TOTAL_HEALTHCARE_AMT</AmtType><Amt>5000</Amt></SecondAdditionalAmtInfo><ThirdAdditionalAmtInfo><AmtType>SUBTOTAL_CLINIC_OR_OTHER_AMT</AmtType><Amt>2500</Amt></ThirdAdditionalAmtInfo><MerchantVerificationValue>12345</MerchantVerificationValue><RealTimeSubstantiation>N</RealTimeSubstantiation></AutoSubstantiation></Block1></CreditSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      },
+      {
+         "name":"threeSubTotals",
+         "request":{
+            "type":"soapRequest",
+            "data":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soap:Body><PosRequest xmlns=\"http://Hps.Exchange.PosGateway\"><Ver1.0><Header><SecretAPIKey>skapi_cert_MTeSAQAfG1UA9qQDrzl-kz4toXvARyieptFwSKP24w</SecretAPIKey><PosReqDT>2020-06-12T14:58:17.516+03:00</PosReqDT></Header><Transaction><CreditSale><Block1><AllowDup>Y</AllowDup><AllowPartialAuth>N</AllowPartialAuth><Amt>215</Amt><CardData><TrackData method=\"swipe\">&lt;E1050711%B401200XXXXXX0016^VI TEST CREDIT^251200000000000000000000?|LO04K0WFOmdkDz0um+GwUkILL8ZZOP6Zc4rCpZ9+kg2T3JBT4AEOilWTI|+++++++Dbbn04ekG|11;401200XXXXXX0016=25120000000000000000?|1u2F/aEhbdoPixyAPGyIDv3gBfF|+++++++Dbbn04ekG|00|||/wECAQECAoFGAgEH2wYcShV78RZwb3NAc2VjdXJlZXhjaGFuZ2UubmV0PX50qfj4dt0lu9oFBESQQNkpoxEVpCW3ZKmoIV3T93zphPS3XKP4+DiVlM8VIOOmAuRrpzxNi0TN/DWXWSjUC8m/PI2dACGdl/hVJ/imfqIs68wYDnp8j0ZfgvM26MlnDbTVRrSx68Nzj2QAgpBCHcaBb/FZm9T7pfMr2Mlh2YcAt6gGG1i2bJgiEJn8IiSDX5M2ybzqRT86PCbKle/XCTwFFe1X|&gt;;</TrackData><EncryptionData><Version>01</Version></EncryptionData><TokenRequest>N</TokenRequest></CardData><AutoSubstantiation><FirstAdditionalAmtInfo><AmtType>SUBTOTAL_VISION__OPTICAL_AMT</AmtType><Amt>2500</Amt></FirstAdditionalAmtInfo><SecondAdditionalAmtInfo><AmtType>SUBTOTAL_DENTAL_AMT</AmtType><Amt>2500</Amt></SecondAdditionalAmtInfo><ThirdAdditionalAmtInfo><AmtType>TOTAL_HEALTHCARE_AMT</AmtType><Amt>7500</Amt></ThirdAdditionalAmtInfo><FourthAdditionalAmtInfo><AmtType>SUBTOTAL_CLINIC_OR_OTHER_AMT</AmtType><Amt>2500</Amt></FourthAdditionalAmtInfo><MerchantVerificationValue>12345</MerchantVerificationValue><RealTimeSubstantiation>N</RealTimeSubstantiation></AutoSubstantiation></Block1></CreditSale></Transaction></Ver1.0></PosRequest></soap:Body></soap:Envelope>"
+         },
+         "response":{
+            "type":"codeResponse",
+            "data":"00"
+         }
+      },
+      {
          "name":"totalAmountTest",
          "request":{
             "type":"noRequest",
@@ -30,7 +74,7 @@
          },
          "response":{
             "type":"noResponse",
-            "data":"00"
+            "data":null
          }
       }
    ]
