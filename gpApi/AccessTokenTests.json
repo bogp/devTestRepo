@@ -9,7 +9,7 @@
          },
          "request":{
             "type":"restRequest",
-            "data":"{\"method\":\"GET\",\"url\":\"https://apis.sandbox.globalpay.com/ucp/accesstoken\",\"headers\":{\"X-GP-VERSION\":\"2020-04-10\",\"ACCEPT\":\"application/json\",\"ACCEPT-ENCODING\":\"gzip\"},\"body\":\"{\\\"app_id\\\":\\\"EyTIbOxTYmuxAAAAlzD4F1vXflCkpRrc\\\",\\\"nonce\\\":\\\"random_nonce_string\\\",\\\"secret\\\":\\\"6f9b4b3b7b6aa2dd9246742b86c8a6e88a7d26c41e02645afea5eeb6ca54ae2713ab2afb5ae82cd0efc6f8a37fdbe8e79749d92c15318eb14e7623d258e757bd\\\",\\\"grant_type\\\":\\\"client_credentials\\\"}\"}"
+            "data":"{\"method\":\"GET\",\"url\":\"https://apis.sandbox.globalpay.com/ucp/accesstoken\",\"headers\":{\"X-GP-VERSION\":\"2020-04-10\",\"ACCEPT\":\"application/json\",\"ACCEPT-ENCODING\":\"gzip\"},\"bodyType\":\"AccessTokenBody\",\"body\":\"{\\\"app_id\\\":\\\"EyTIbOxTYmuxAAAAlzD4F1vXflCkpRrc\\\",\\\"nonce\\\":\\\"random_nonce_string\\\",\\\"secret\\\":\\\"6f9b4b3b7b6aa2dd9246742b86c8a6e88a7d26c41e02645afea5eeb6ca54ae2713ab2afb5ae82cd0efc6f8a37fdbe8e79749d92c15318eb14e7623d258e757bd\\\",\\\"grant_type\\\":\\\"client_credentials\\\"}\"}"
          },
          "response":{
             "type":"statusCode",
@@ -25,7 +25,7 @@
          },
          "request":{
             "type":"restRequest",
-            "data":"{\"method\":\"GET\",\"url\":\"https://apis.sandbox.globalpay.com/ucp/accesstoken\",\"headers\":{\"X-GP-VERSION\":\"2020-04-10\",\"ACCEPT\":\"application/json\",\"ACCEPT-ENCODING\":\"gzip\"},\"body\":\"{\\\"app_id\\\":\\\"EyTIbOxTYmuxAAAAlzD4F1vXflCkpRrc\\\",\\\"nonce\\\":\\\"random_nonce_string\\\",\\\"secret\\\":\\\"264a68b06eba692764a668db0e9a1013148f4b3d71ff7c86b08698a945912371ba23b869ca5cad6ccc47b8a20e3a082f0db5a5c5d25bc3b3d04523fb00d5548e\\\",\\\"grant_type\\\":\\\"client_credentials\\\"}\"}"
+            "data":"{\"method\":\"GET\",\"url\":\"https://apis.sandbox.globalpay.com/ucp/accesstoken\",\"headers\":{\"X-GP-VERSION\":\"2020-04-10\",\"ACCEPT\":\"application/json\",\"ACCEPT-ENCODING\":\"gzip\"},\"bodyType\":\"AccessTokenBody\",\"body\":\"{\\\"app_id\\\":\\\"EyTIbOxTYmuxAAAAlzD4F1vXflCkpRrc\\\",\\\"nonce\\\":\\\"random_nonce_string\\\",\\\"secret\\\":\\\"264a68b06eba692764a668db0e9a1013148f4b3d71ff7c86b08698a945912371ba23b869ca5cad6ccc47b8a20e3a082f0db5a5c5d25bc3b3d04523fb00d5548e\\\",\\\"grant_type\\\":\\\"client_credentials\\\"}\"}"
          },
          "response":{
             "type":"gatewayExceptionResponse",
