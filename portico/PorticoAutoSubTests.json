@@ -76,6 +76,17 @@
             "type":"noResponse",
             "data":null
          }
+      },
+      {
+         "name":"totalAmountTest2",
+         "request":{
+            "type":"noRequest",
+            "data":null
+         },
+         "response":{
+            "type":"noResponse",
+            "data":null
+         }
       }
    ]
 }
