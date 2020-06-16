@@ -12,6 +12,8 @@
             "data":{
                "method":"GET",
                "url":"https://apis.sandbox.globalpay.com/ucp/accesstoken",
+			   "urlParameters":{
+			   },
                "headers":{
                   "X-GP-VERSION":"2020-04-10",
                   "ACCEPT":"application/json",
@@ -43,6 +45,8 @@
             "data":{
                "method":"GET",
                "url":"https://apis.sandbox.globalpay.com/ucp/accesstoken",
+			   "urlParameters":{
+			   },
                "headers":{
                   "X-GP-VERSION":"2020-04-10",
                   "ACCEPT":"application/json",
@@ -74,6 +78,8 @@
             "data":{
                "method":"GET",
                "url":"https://apis.sandbox.globalpay.com/ucp/accesstoken",
+			   "urlParameters":{
+			   },
                "headers":{
                   "X-GP-VERSION":"2020-04-10",
                   "ACCEPT":"application/json",
